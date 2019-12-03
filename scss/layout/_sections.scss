@@ -1,0 +1,171 @@
+.section-info {
+  margin-bottom: 100px;
+  text-align: center;
+
+  &__img {
+    @include img-style;
+  }
+
+  &__title {
+    font-family: $main-font;
+    color: $dark-blue;
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 25px;
+    line-height: 1.5;
+  }
+
+  &__p {
+    color: $dark-blue;
+    font-size: 0.9rem;
+    margin: 0 30px;
+  }
+
+  &__form {
+    @include form-style($width: 300px);
+  }
+
+  &__form-input {
+    border: 1px solid $dark-blue;
+    border-radius: 3px;
+
+    padding: 10px 15px;
+    margin-bottom: 15px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__form-btn {
+    @include btn($font-size: 0.8rem);
+    box-shadow: 0px 5px 6px 0px rgba(0, 0, 0, 0.1);
+  }
+}
+
+picture {
+  img {
+    display: block;
+  }
+}
+
+.section-motivation {
+  background-color: #f8f8fe;
+  padding-bottom: 90px;
+
+  &__img {
+    @include img-style;
+  }
+
+  &__title {
+    text-align: center;
+    font-family: $heading;
+    color: $dark-blue;
+    font-size: 1em;
+    font-weight: 700;
+    margin: 25px;
+  }
+
+  &__p {
+    text-align: left;
+    color: $dark-blue;
+    line-height: 1.6;
+    margin: 0 30px;
+    font-size: 0.9rem;
+    margin-bottom: 40px;
+  }
+
+  &__link {
+    width: 140px;
+    margin: 0 auto;
+    border-bottom: 1px solid $Moderate-Cyan;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 5px;
+  }
+
+  &__link-text {
+    font-size: 0.8rem;
+    color: $Moderate-Cyan;
+    text-decoration: none;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    padding: 20px 25px;
+    margin: 45px 45px 0 45px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.05);
+  }
+
+  &__icon {
+    width: 15px;
+    height: 15px;
+  }
+
+  &__card-p {
+    font-size: 0.65rem;
+    padding: 15px 0;
+    line-height: 1.6;
+  }
+
+  &__user-info {
+    display: flex;
+    justify-content: flex-start;
+    font-size: 0.55rem;
+  }
+
+  &__user-info-name {
+    font-size: 0.75rem;
+    font-weight: bold;
+  }
+
+  &__user-info-img {
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+}
+
+.section-access {
+  background-color: $Desaturated-Blue;
+  padding: 30px;
+  color: white;
+  text-align: center;
+
+  &__title {
+    font-family: $heading;
+    font-size: 1em;
+    font-weight: 700;
+    margin-top: 20px;
+  }
+
+  &__p {
+    font-size: 0.9rem;
+    margin: 20px 15px;
+    line-height: 1.5;
+  }
+
+  &__form {
+    @include form-style($width: 250px);
+  }
+
+  &__form-input {
+    border: none;
+    border-radius: 3px;
+    font-size: 0.6rem;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__form-btn {
+    @include btn($font-size: 0.8rem);
+  }
+}

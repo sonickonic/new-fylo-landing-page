@@ -1,0 +1,24 @@
+@mixin img-style {
+  width: 300px;
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+@mixin form-style($width) {
+    display: flex;
+    flex-direction: column;
+    width: $width;
+    margin: 30px auto;
+}
+
+@mixin btn($font-size) {
+  background-color: $Bright-Blue;
+  border: none;
+  border-radius: 3px;
+  color: white;
+  padding: 10px;
+  font-size: $font-size;
+  font-family: $heading;
+  font-weight: 700;
+}

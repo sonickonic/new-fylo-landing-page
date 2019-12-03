@@ -1,0 +1,56 @@
+.footer {
+  background-color: $dark-blue;
+  padding: 0 30px;
+  color: white;
+
+  &__logo {
+    fill: white;
+    margin-top: 60px;
+    margin-bottom: 40px;
+  }
+
+  &__phone {
+    margin-bottom: 25px;
+  }
+
+  &__phone::before {
+    content: url(../images/icon-phone.svg);
+    margin-right: 20px;
+  }
+
+  &__email::before {
+    content: url(../images/icon-email.svg);
+    margin-right: 20px;
+  }
+
+  &__list {
+    list-style: none;
+    line-height: 2.6;
+    margin-top: 40px;
+  }
+
+  &__list-item {
+    cursor: pointer;
+  }
+
+  &__social-media {
+    display: flex;
+    justify-content: center;
+    padding: 40px 0;
+  }
+
+  &__faceboob-icon,
+  &__twitter-icon,
+  &__instagram-icon {
+    width: 25px;
+    margin: 5px;
+    cursor: pointer;
+  }
+}
+
+.footer-frontendmentor {
+  margin: 10px 0;
+  font-size: 11px;
+  text-align: center;
+  color: #3e52a3;
+}
