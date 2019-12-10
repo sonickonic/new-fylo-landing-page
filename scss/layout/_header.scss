@@ -6,8 +6,7 @@
   font-family: $heading;
   font-weight: 400;
   font-size: 0.8rem;
-  margin: 25px;
-  margin-bottom: 90px;
+  margin: 25px 25px 90px;
 
   &__logo {
     width: 80px;
@@ -21,5 +20,31 @@
     &:hover {
       color: $Light-Grayish-Blue;
     }
+  }
+}
+
+@include screen-m {
+  .header {
+    max-width: 500px;
+    margin: 25px auto;
+    margin-bottom: 90px;
+  }
+}
+
+@include screen-l {
+  .header {
+    max-width: 1040px;
+    margin: 65px auto;
+    font-size: 1rem;
+
+    &__logo {
+      width: 160px;
+    }
+  }
+}
+
+@include screen-xl {
+  .header {
+    max-width: 1280px;
   }
 }

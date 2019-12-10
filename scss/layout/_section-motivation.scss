@@ -1,0 +1,180 @@
+picture {
+  img {
+    display: block;
+    width: 100%;
+  }
+}
+
+.section-motivation {
+  background-color: #f8f8fe;
+  padding-bottom: 90px;
+
+  &__img {
+    @include img-style;
+  }
+
+  &__title {
+    text-align: center;
+    font-family: $heading;
+    color: $dark-blue;
+    font-size: 1em;
+    font-weight: 700;
+    margin: 25px;
+  }
+
+  &__p {
+    text-align: left;
+    color: $dark-blue;
+    line-height: 1.6;
+    margin: 0 30px;
+    font-size: 0.9rem;
+    margin-bottom: 40px;
+  }
+
+  &__link {
+    display: flex;
+    justify-content: space-between;
+
+    width: 140px;
+    margin: 0 auto;
+    border-bottom: 1px solid $Moderate-Cyan;
+    align-items: center;
+    padding-bottom: 5px;
+  }
+
+  &__link-text {
+    font-size: 0.8rem;
+    color: $Moderate-Cyan;
+    text-decoration: none;
+  }
+
+  &__card {
+    display: flex;
+    flex-direction: column;
+
+    background-color: white;
+    padding: 20px 25px;
+    border-radius: 4px;
+    box-shadow: 0px 0px 6px 2px rgba(0, 0, 0, 0.05);
+    width: 280px;
+    margin: 45px auto 0;
+  }
+
+  &__icon {
+    width: 15px;
+    height: 15px;
+  }
+
+  &__card-p {
+    font-size: 0.65rem;
+    padding: 15px 0;
+  }
+
+  &__user-info {
+    display: flex;
+    justify-content: flex-start;
+
+    font-size: 0.55rem;
+  }
+
+  &__user-info-name {
+    font-size: 0.75rem;
+    font-weight: bold;
+  }
+
+  &__user-info-img {
+    width: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+  }
+}
+
+@include screen-m {
+  .section-motivation {
+    &__title {
+      font-size: 1.5em;
+    }
+
+    &__p {
+      max-width: 500px;
+      margin: 0 auto 40px;
+    }
+
+    &__card {
+      padding: 25px 30px;
+      width: 350px;
+    }
+
+    &__card-p {
+      font-size: 0.85rem;
+      line-height: 1.9;
+    }
+  }
+}
+
+@include screen-l {
+  .section-motivation {
+    padding-bottom: 60px;
+
+    &__container-main {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+
+      text-align: left;
+      margin: 0 auto;
+      max-width: 1040px;
+      padding-top: 40px;
+    }
+
+    &__img {
+      width: 450px;
+      height: 100%;
+      margin: 0;
+      margin-left: 60px;
+    }
+
+    &__p {
+      max-width: 540px;
+      font-size: 1rem;
+      margin: 0 0 20px;
+    }
+
+    &__title {
+      text-align: left;
+      font-size: 2em;
+      margin: 0 0 40px;
+    }
+
+    &__link {
+      width: 170px;
+      margin: 0;
+    }
+
+    &__link-text {
+      font-size: 1rem;
+    }
+
+    &__card {
+      margin: 45px 0;
+    }
+  }
+}
+
+@include screen-xl {
+  .section-motivation {
+    &__container-main {
+      max-width: 1280px;
+    }
+
+    &__img {
+      width: 550px;
+      margin: 0;
+      margin-left: 60px;
+    }
+
+    &__title {
+      font-size: 2.4em;
+    }
+  }
+}

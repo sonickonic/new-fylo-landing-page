@@ -20,5 +20,23 @@
   padding: 10px;
   font-size: $font-size;
   font-family: $heading;
-  font-weight: 700;
+  font-weight: 400;
+}
+
+@mixin screen-m {
+  @media (min-width: 600px) {
+    @content;
+  }
+}
+
+@mixin screen-l {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
+
+@mixin screen-xl {
+  @media (min-width: 1440px) {
+    @content;
+  }
 }

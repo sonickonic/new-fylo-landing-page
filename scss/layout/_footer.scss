@@ -5,8 +5,7 @@
 
   &__logo {
     fill: white;
-    margin-top: 60px;
-    margin-bottom: 40px;
+    margin: 60px 0 40px;
   }
 
   &__phone {
@@ -36,6 +35,7 @@
   &__social-media {
     display: flex;
     justify-content: center;
+
     padding: 40px 0;
   }
 
@@ -53,4 +53,50 @@
   font-size: 11px;
   text-align: center;
   color: #3e52a3;
+}
+
+@include screen-l {
+  .footer {
+    &__container-main {
+      display: flex;
+      flex-direction: column;
+
+      max-width: 1040px;
+      margin: 0 auto;
+    }
+
+    &__logo {
+      margin: 120px 0 10px;
+    }
+
+    &__container-links {
+      display: flex;
+      justify-content: space-between;
+      
+      padding: 0 200px 60px 0;
+    }
+
+    &__phone,
+    &__email {
+      margin: 0;
+      line-height: 2.6;
+    }
+
+    &__list {
+      margin-top: 0;
+    }
+
+    &__social-media {
+      display: inline;
+      padding: 0;
+    }
+  }
+}
+
+@include screen-xl {
+  .footer {
+    &__container-main {
+      max-width: 1280px;
+    }
+  }
 }

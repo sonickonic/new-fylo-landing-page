@@ -1,0 +1,103 @@
+.section-access {
+  background-color: $Desaturated-Blue;
+  padding: 30px;
+  color: white;
+  text-align: center;
+
+  &__title {
+    font-family: $heading;
+    font-size: 1em;
+    font-weight: 700;
+    margin-top: 20px;
+  }
+
+  &__p {
+    font-size: 0.9rem;
+    margin: 20px 15px;
+    line-height: 1.5;
+  }
+
+  &__form {
+    @include form-style($width: 250px);
+  }
+
+  &__form-input {
+    border: none;
+    border-radius: 3px;
+    font-size: 0.6rem;
+    padding: 10px 15px;
+    margin-bottom: 10px;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &__form-btn {
+    @include btn($font-size: 0.8rem);
+  }
+}
+
+@include screen-m {
+  .section-access {
+    &__title {
+      font-size: 1.5em;
+    }
+
+    &__p {
+      max-width: 500px;
+      margin: 20px auto;
+    }
+
+    &__form {
+      flex-direction: row;
+      width: 515px;
+    }
+
+    &__form-input {
+      margin-right: 15px;
+      margin-bottom: 0;
+      width: 300px;
+    }
+
+    &__form-btn {
+      width: 200px;
+    }
+  }
+}
+
+@include screen-l {
+  .section-access {
+    text-align: left;
+    padding: 50px;
+
+    &__container-main {
+      display: flex;
+      max-width: 1040px;
+      margin: 0 auto;
+    }
+    &__p {
+      font-size: 1rem;
+      margin: 20px 0;
+    }
+
+    &__form {
+      flex-direction: column;
+      width: 400px;
+      margin-right: 70px;
+    }
+
+    &__form-input {
+      margin-bottom: 15px;
+      width: 400px;
+    }
+  }
+}
+
+@include screen-xl {
+  .section-access {
+    &__container-main {
+      max-width: 1280px;
+    }
+  }
+}
